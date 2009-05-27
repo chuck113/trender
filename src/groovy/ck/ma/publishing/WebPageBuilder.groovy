@@ -64,9 +64,6 @@ hza.style.display = state;
       webpage += "</table><br>\n"
     }
 
-    // change 2           999
-
-    
     ///webpage += "</table>\n"""
 
     webpage += "</body></html>"
