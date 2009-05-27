@@ -1,0 +1,142 @@
+<html><head><title>title</title>
+<script language="javascript">
+<!--
+
+var state = 'none';
+
+function showhide(layer_ref) {
+
+if (state == 'block') {
+state = 'none';
+}
+else {
+state = 'block';
+}
+if (document.all) { //IS IE 4 or 5 (or 6 beta)
+eval( "document.all." + layer_ref + ".style.display = state");
+}
+if (document.layers) { //IS NETSCAPE 4 or below
+document.layers[layer_ref].display = state;
+}
+if (document.getElementById &&!document.all) {
+hza = document.getElementById(layer_ref);
+hza.style.display = state;
+}
+}
+//-->
+</script> 
+</head><body>
+<table id='title-trending-table-title'>
+<tr><td width="100">Company</td><td width="100">Magnitude Ratio</td><td width="100">PurityRatio</td></tr></table>
+
+<!--
+<p><a href="#" onclick="showhide('div1');">Show/hide me</a></p>
+<div id="div1" style="display: none;">This is the content</div>
+-->
+
+  <table><tr><td width="100">BARC</td><td width="100">0.425</td><td width="100">1</td><td width="100"><a style="" href="#" onclick="showhide('BARC-info');">info</a></td></tr></table>
+   <div style="display: none" id="BARC-info"><a href="www.google.com">yahoo</a></div>
+  <table><tr><td width="100">RBS</td><td width="100">0.425</td><td width="100">1</td><td width="100"><a href="#" onclick="showhide('RBS-info');">info</a></td></tr></table>
+   <div style="display: none" id="RBS-info"><a href="www.google.com">yahoo</a></div>
+<!--
+  <tr><td>VED</td><td>0.355</td><td>1</td></tr>
+  <tr><td>RBS</td><td>0.349</td><td>1</td></tr>
+  <tr><td>KAZ</td><td>0.333</td><td>1</td></tr>
+  <tr><td>LLOY</td><td>0.299</td><td>0.816</td></tr>
+  <tr><td>AV</td><td>0.27</td><td>0.966</td></tr>
+  <tr><td>ENRC</td><td>0.267</td><td>1</td></tr>
+  <tr><td>LGEN</td><td>0.252</td><td>0.921</td></tr>
+  <tr><td>LSE</td><td>0.223</td><td>0.954</td></tr>
+  <tr><td>XTA</td><td>0.219</td><td>0.876</td></tr>
+  <tr><td>PRU</td><td>0.191</td><td>0.937</td></tr>
+  <tr><td>RIO</td><td>0.19</td><td>0.944</td></tr>
+  <tr><td>OML</td><td>0.181</td><td>0.879</td></tr>
+  <tr><td>STAN</td><td>0.18</td><td>0.895</td></tr>
+  <tr><td>LAND</td><td>0.17</td><td>0.957</td></tr>
+  <tr><td>FGP</td><td>0.169</td><td>0.992</td></tr>
+  <tr><td>HSBA</td><td>0.168</td><td>0.964</td></tr>
+  <tr><td>IAP</td><td>0.163</td><td>0.948</td></tr>
+  <tr><td>HMSO</td><td>0.148</td><td>0.9</td></tr>
+  <tr><td>III</td><td>0.146</td><td>0.656</td></tr>
+  <tr><td>AAL</td><td>0.144</td><td>0.879</td></tr>
+  <tr><td>IHG</td><td>0.138</td><td>0.987</td></tr>
+  <tr><td>IPR</td><td>0.135</td><td>1</td></tr>
+  <tr><td>KGF</td><td>0.134</td><td>0.947</td></tr>
+  <tr><td>ISYS</td><td>0.119</td><td>0.82</td></tr>
+  <tr><td>AMEC</td><td>0.116</td><td>1</td></tr>
+  <tr><td>TCG</td><td>0.115</td><td>0.855</td></tr>
+  <tr><td>NXT</td><td>0.114</td><td>0.781</td></tr>
+  <tr><td>WPP</td><td>0.113</td><td>0.94</td></tr>
+  <tr><td>ABF</td><td>0.108</td><td>0.921</td></tr>
+  <tr><td>MKS</td><td>0.106</td><td>0.931</td></tr>
+  <tr><td>ANTO</td><td>0.106</td><td>0.801</td></tr>
+  <tr><td>SAB</td><td>0.103</td><td>0.946</td></tr>
+  <tr><td>PNN</td><td>0.102</td><td>0.937</td></tr>
+  <tr><td>CCL</td><td>0.096</td><td>0.835</td></tr>
+  <tr><td>SGE</td><td>0.093</td><td>0.904</td></tr>
+  <tr><td>WTB</td><td>0.085</td><td>0.856</td></tr>
+  <tr><td>REX</td><td>0.082</td><td>0.832</td></tr>
+  <tr><td>TLW</td><td>0.082</td><td>0.673</td></tr>
+  <tr><td>JMAT</td><td>0.081</td><td>0.915</td></tr>
+  <tr><td>SL</td><td>0.081</td><td>0.862</td></tr>
+  <tr><td>CW</td><td>0.079</td><td>0.944</td></tr>
+  <tr><td>ISAT</td><td>0.079</td><td>0.665</td></tr>
+  <tr><td>BLND</td><td>0.078</td><td>0.699</td></tr>
+  <tr><td>EMG</td><td>0.077</td><td>0.636</td></tr>
+  <tr><td>BP</td><td>0.077</td><td>0.69</td></tr>
+  <tr><td>BSY</td><td>0.073</td><td>0.801</td></tr>
+  <tr><td>TRIL</td><td>0.072</td><td>0.883</td></tr>
+  <tr><td>DGE</td><td>0.068</td><td>0.908</td></tr>
+  <tr><td>AU</td><td>0.061</td><td>0.493</td></tr>
+  <tr><td>RR</td><td>0.06</td><td>0.688</td></tr>
+  <tr><td>CNE</td><td>0.06</td><td>0.689</td></tr>
+  <tr><td>BAY</td><td>0.06</td><td>0.395</td></tr>
+  <tr><td>TT</td><td>0.059</td><td>0.637</td></tr>
+  <tr><td>ATST</td><td>0.056</td><td>0.81</td></tr>
+  <tr><td>SDR</td><td>0.053</td><td>0.438</td></tr>
+  <tr><td>SVT</td><td>0.053</td><td>0.848</td></tr>
+  <tr><td>SBRY</td><td>0.051</td><td>0.65</td></tr>
+  <tr><td>BA</td><td>0.049</td><td>0.683</td></tr>
+  <tr><td>ULVR</td><td>0.049</td><td>0.627</td></tr>
+  <tr><td>REL</td><td>0.048</td><td>0.579</td></tr>
+  <tr><td>CPG</td><td>0.048</td><td>0.711</td></tr>
+  <tr><td>BLT</td><td>0.044</td><td>0.557</td></tr>
+  <tr><td>NG</td><td>0.043</td><td>0.678</td></tr>
+  <tr><td>TATE</td><td>0.039</td><td>0.582</td></tr>
+  <tr><td>SDRC</td><td>0.038</td><td>0.357</td></tr>
+  <tr><td>SMIN</td><td>0.036</td><td>0.59</td></tr>
+  <tr><td>TSCO</td><td>0.036</td><td>0.618</td></tr>
+  <tr><td>SN</td><td>0.036</td><td>0.787</td></tr>
+  <tr><td>HOME</td><td>0.033</td><td>0.239</td></tr>
+  <tr><td>CPI</td><td>0.031</td><td>0.4</td></tr>
+  <tr><td>AZN</td><td>0.031</td><td>0.497</td></tr>
+  <tr><td>SHP</td><td>0.031</td><td>0.61</td></tr>
+  <tr><td>BATS</td><td>0.031</td><td>0.585</td></tr>
+  <tr><td>SRP</td><td>0.03</td><td>0.505</td></tr>
+  <tr><td>RB</td><td>0.029</td><td>0.799</td></tr>
+  <tr><td>GFS</td><td>0.029</td><td>0.477</td></tr>
+  <tr><td>RRS</td><td>0.024</td><td>0.144</td></tr>
+  <tr><td>RDSA</td><td>0.024</td><td>0.247</td></tr>
+  <tr><td>BG</td><td>0.022</td><td>0.353</td></tr>
+  <tr><td>AML</td><td>0.022</td><td>0.363</td></tr>
+  <tr><td>UU</td><td>0.018</td><td>0.586</td></tr>
+  <tr><td>ADM</td><td>0.011</td><td>0.13</td></tr>
+  <tr><td>IMT</td><td>0.01</td><td>0.177</td></tr>
+  <tr><td>CNA</td><td>0.008</td><td>0.107</td></tr>
+  <tr><td>LII</td><td>0.006</td><td>0.038</td></tr>
+  <tr><td>SSE</td><td>0.006</td><td>0.114</td></tr>
+  <tr><td>FP</td><td>0.004</td><td>0.033</td></tr>
+  <tr><td>EXPN</td><td>0.003</td><td>0.044</td></tr>
+  <tr><td>RDSB</td><td>0</td><td>0</td></tr>
+  <tr><td>BT.A</td><td>0</td><td>0</td></tr>
+  <tr><td>VOD</td><td>-0</td><td>-0.002</td></tr>
+  <tr><td>RSA</td><td>-0.002</td><td>-0.031</td></tr>
+  <tr><td>GSK</td><td>-0.002</td><td>-0.053</td></tr>
+  <tr><td>PSON</td><td>-0.003</td><td>-0.052</td></tr>
+  <tr><td>COB</td><td>-0.008</td><td>-0.199</td></tr>
+  <tr><td>MRW</td><td>-0.047</td><td>-0.767</td></tr>
+  <tr><td>BNZL</td><td>-0.048</td><td>-0.404</td></tr>
+  <tr><td>DRX</td><td>-0.054</td><td>-0.718</td></tr>
+  </table>
+  -->
+  </body></html>

@@ -1,0 +1,66 @@
+<html><head><title>EMA indicators</title><script language="javascript">
+<!--
+
+var state = 'none';
+
+function showhide(layer_ref) {
+
+if (state == 'block') {
+state = 'none';
+}
+else {
+state = 'block';
+}
+if (document.all) { //IS IE 4 or 5 (or 6 beta)
+eval( "document.all." + layer_ref + ".style.display = state");
+}
+if (document.layers) { //IS NETSCAPE 4 or below
+document.layers[layer_ref].display = state;
+}
+if (document.getElementById &&!document.all) {
+hza = document.getElementById(layer_ref);
+hza.style.display = state;
+}
+}
+//-->
+</script> </head><body>
+<table id='EMA indicators-trending-table'>
+<table id='title-trending-table-title'><tr><td width="100">Company</td>
+<td width="100">EMA 13</td><td width="100">EMA 26</td><td width="100">EMA 52</td></table>
+<table><td width="100">BARC</td><td width="100">2</td><td width="100">110</td><td width="100">84</td><td width="100"><a style="" href="#" onclick="showhide('BARC-info');">info</a></td><div style="display: none" id="BARC-info">
+          <a href="http://uk.finance.yahoo.com/q?s=BARC.L">yahoo</a></br>
+
+          <a href="http://www.iii.co.uk/investment/detail?code=cotn:BARC.L&display=discussion&it=le">III</a></br>
+
+          <a href="http://www.google.co.uk/finance?client=ob&q=LON:BARC">Google</a></br>
+
+          <a href="http://www.shareprice.co.uk/BARC/">Shareprice</a></br>
+
+          <a href="http://www.bloomberg.com/apps/news?pid=conews&tkr=BARC%3ALN">Bloomberg News</a></br>
+<img src='./images/BARC.png' alt='Could not load file' /></br>
+</div></table><br>
+<table><td width="100">XTA</td><td width="100">0</td><td width="100">113</td><td width="100">87</td><td width="100"><a style="" href="#" onclick="showhide('XTA-info');">info</a></td><div style="display: none" id="XTA-info">
+          <a href="http://uk.finance.yahoo.com/q?s=XTA.L">yahoo</a></br>
+
+          <a href="http://www.iii.co.uk/investment/detail?code=cotn:XTA.L&display=discussion&it=le">III</a></br>
+
+          <a href="http://www.google.co.uk/finance?client=ob&q=LON:XTA">Google</a></br>
+
+          <a href="http://www.shareprice.co.uk/XTA/">Shareprice</a></br>
+
+          <a href="http://www.bloomberg.com/apps/news?pid=conews&tkr=XTA%3ALN">Bloomberg News</a></br>
+<img src='./images/XTA.png' alt='Could not load file' /></br>
+</div></table><br>
+<table><td width="100">HSBA</td><td width="100">58</td><td width="100">49</td><td width="100">35</td><td width="100"><a style="" href="#" onclick="showhide('HSBA-info');">info</a></td><div style="display: none" id="HSBA-info">
+          <a href="http://uk.finance.yahoo.com/q?s=HSBA.L">yahoo</a></br>
+
+          <a href="http://www.iii.co.uk/investment/detail?code=cotn:HSBA.L&display=discussion&it=le">III</a></br>
+
+          <a href="http://www.google.co.uk/finance?client=ob&q=LON:HSBA">Google</a></br>
+
+          <a href="http://www.shareprice.co.uk/HSBA/">Shareprice</a></br>
+
+          <a href="http://www.bloomberg.com/apps/news?pid=conews&tkr=HSBA%3ALN">Bloomberg News</a></br>
+<img src='./images/HSBA.png' alt='Could not load file' /></br>
+</div></table><br>
+</body></html>
