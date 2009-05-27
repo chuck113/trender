@@ -36,7 +36,7 @@ hza.style.display = state;
     NUMBER_FORMATTER.format(bigDecimal.doubleValue())
   }
 
-
+               //another change
    /**
     * Take
     * list of EmaIndicatorEntry s
